@@ -4,8 +4,6 @@ body {
    flex-direction: column;
    
 }
-
-
 .top{
     
     min-height: 100px;
@@ -24,6 +22,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    padding-right: 20px;
     
 }
 
@@ -34,22 +33,28 @@ body {
     margin: 0px;
 }
 
-ul {
+.box-container,
+.top-right {
     list-style: none;
     padding-left: 0px;
     display: flex;
     gap: 16px;
-    align-items: top;
-    font-size: 12px;
+   
     
-
 }
-a {
+.box-container a,
+button a,
+.top-right a {
     text-decoration: none;
     color: white;
     
 }
 
+.top-right {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: top;
+    font-size: 12px;
+}
 .banner {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -62,15 +67,12 @@ a {
 
 .banner h1 {
     font-size: 48px;
-   
-  
-   
 }
 .banner h5 {
     font-size: 18px;
     color: #e5e7eb;
     word-wrap: break-word;
-    max-width: 700px;
+    max-width: 620px;
  
 }
 .banner img {
@@ -84,8 +86,48 @@ button {
     background-color: #3882f6;
     border: none;
     padding: 8px;
-    
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.content h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:60px;
+   
+
+}
+.box-container img{
+    color:#1F2937;
+    border:2px solid #3882f6;
+    border-radius: 5px;
+    max-width: 100px;
+    max-height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+}
+.box-container p {
+    word-wrap: break-word;
+    max-width: 100px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    
+}
