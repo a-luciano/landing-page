@@ -1,22 +1,13 @@
 body {
    margin: 0px;
-   display: flex;
-   flex-direction: column;
-   
 }
 .top{
-    
-    min-height: 100px;
     background-color: #1F2937;
     padding: 10px 140px 100px;
-   
-    
-
 }
 .header {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .logo {
@@ -39,12 +30,9 @@ body {
     padding-left: 0px;
     display: flex;
     gap: 16px;
-   
-    
+     
 }
-.box-container a,
-button a,
-.top-right a {
+a {
     text-decoration: none;
     color: white;
     
@@ -52,27 +40,32 @@ button a,
 
 .top-right {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-items: top;
     font-size: 12px;
+    flex-wrap: wrap;
 }
 .banner {
     display: flex;
     flex-wrap: wrap-reverse;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
     color: #f9faf8;
-    padding: 20px;
+    padding-top: 40px;
+    
 }
 
 .banner h1 {
     font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    margin:0px;
 }
 .banner h5 {
     font-size: 18px;
     color: #e5e7eb;
     word-wrap: break-word;
     max-width: 620px;
+    margin-top: 10px;
+    margin-bottom: 10px;
  
 }
 .banner img {
@@ -80,7 +73,7 @@ button a,
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button {
+.banner button {
     color: white;
     font-weight: bold;
     background-color: #3882f6;
@@ -96,6 +89,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 140px;
 
 
 }
@@ -104,14 +98,14 @@ button {
     font-weight: bolder;
     word-wrap: break-word;
     text-align: center;
+    margin: 10px;
 }
 
 .box-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap:60px;
-   
+    gap:40px;
 
 }
 .box-container img{
@@ -130,4 +124,71 @@ button {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 13px;
     
+}
+.testimonial{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #e5e7eb;
+   font-family: Quicksand;
+   color: #1F2937;
+   padding: 40px 140px;
+}
+.testimonial h5 {
+    font-size: 18px;
+    font-weight:lighter;
+    font-style: italic;
+    max-width:500px; 
+    margin: 0px;
+   
+}
+.testimonial p{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size: 12px;
+}
+
+.subscribe {
+   display: flex;
+   justify-content: center;
+   padding: 40px 140px;
+   
+}
+.subscribe-section{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3882f6;
+    border-radius: 5px;
+    padding: 10px 80px ;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e5e7eb;
+    font-weight:bolder;
+    font-size: 20px;
+    
+}
+.subscribe h6 p {
+    padding-right: 60px;
+    margin: 0px;
+    padding-top: 3px;
+    font-weight: lighter;
+    font-size: 11px;
+    
+}
+.subscribe button {
+    background-color: #3882f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    
+    padding: 5px 20px;
+}
+
+.footer {
+    background-color: #1F2937;
+    padding: 15px;
+    color: #e5e7eb;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
 }
